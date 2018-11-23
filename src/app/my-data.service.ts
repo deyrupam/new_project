@@ -6,9 +6,10 @@ import { Http }  from '@angular/http';
 export class MyDataService {
 
   constructor(private http:Http) { }
-fetchData(){
-  this.http.get('../data/students.json').subscribe(
-    (data)=>console.log(data)
+
+  fetchData(){
+  this.http.get('http://jsonplaceholder.typicode.com/users').subscribe(
+    (data) => console.log(data)
   )
 
 }

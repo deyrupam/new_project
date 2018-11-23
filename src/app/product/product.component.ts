@@ -12,8 +12,9 @@ export class ProductComponent implements OnInit {
 
    ngOnInit() {
     // console.log(this.newservice.obj);
-    // console.log(this.newservice.success  ());
     console.log(student);
+    console.log(this.newservice.fetchData());
+
   }
 
 
